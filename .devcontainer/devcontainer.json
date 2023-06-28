@@ -1,5 +1,5 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/java:11",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
     "mounts": [
       {
         "source": "${localEnv:HOME}/.m2",
