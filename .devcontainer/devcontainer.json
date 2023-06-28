@@ -1,6 +1,8 @@
 {
+    "name": "intellij-GTW-5413-example",
     "image": "mcr.microsoft.com/devcontainers/java:11",
     "privileged": true,
+    "containerUser": "vscode",
     "features": {
       "ghcr.io/devcontainers/features/git:1": {},
       "ghcr.io/devcontainers/features/java:1": {
