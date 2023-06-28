@@ -1,0 +1,30 @@
+{
+    "image": "mcr.microsoft.com/devcontainers/java:11",
+    "mounts": [
+      {
+        "source": "${localEnv:HOME}/.m2",
+        "target": "/var/maven/.m2",
+        "type": "bind"
+      }
+    ],
+    "privileged": true,
+    "containerEnv": {
+      "WORKSPACE": "${containerWorkspaceFolder}"
+    },
+    "containerUser": "vscode",
+    "features": {
+      "ghcr.io/devcontainers/features/git:1": {},
+      "ghcr.io/devcontainers/features/java:1": {
+        "version": "11",
+        "jdkDistro": "open",
+        "installGradle": "false",
+        "installMaven": "true"
+      },
+      "ghcr.io/eitsupi/devcontainer-features/jq-likes:1": {
+        "yqVersion": "4"
+      },
+      "ghcr.io/devcontainers/features/docker-in-docker:2": {
+        "dockerDashComposeVersion": "v2"
+      }
+    }
+  }
