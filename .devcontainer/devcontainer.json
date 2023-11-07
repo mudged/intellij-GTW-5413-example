@@ -8,8 +8,8 @@
     "features": {
       "ghcr.io/devcontainers/features/git:1": {},
       "ghcr.io/devcontainers/features/java:1": {
-        "version": "11",
-        "jdkDistro": "open",
+        "version": "17",
+        "jdkDistro": "tem",
         "installGradle": "false",
         "installMaven": "true"
       },
